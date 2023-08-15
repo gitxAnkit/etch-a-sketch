@@ -1,28 +1,24 @@
 *{
     margin: 0;
 }
-
+body{
+    background-color: #403e3e33;
+}
 .header{
-    /* border: 1px solid red; */
-    width: 1000px;
-    padding: 20px;
-    margin: auto;
+    margin-left:9vmax ;
+    padding: 20px 0;
 }
 .title{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:50px;
+    font-size:5vmax;
+    font-family: 'Oswald', sans-serif;
+    color: black ;
+    
 }
-/* div{
-    border: 2px solid blue;
-    width: 100px;
-    height: 50px;
-    margin: auto;
-} */
 .main{
     display: flex;
-    /* border: 2px solid pink; */
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
     
 }
 .settings{
@@ -30,24 +26,42 @@
     flex-direction: column;
     align-items: center;
     justify-content:center ;
-    /* border: 2px solid black; */
-    /* margin-left:10vmax;
-    margin-right: 5vmax; */
 }
 #input-color{
     width: 5vmax;
     height: 5vmax;
-    border: 2px solid black;
+    border:none; 
+    color: inherit;
 }
 .grid-container{
-    width: 40vw;
-    height: 80vh;
-    border: 2px solid black;
-    
+    width: 40vmax;
+    height: 40vmax;
+    /* border: 0.5px solid black; */
+    display: grid;
+    background-color: #fefefe;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 button{
-    width: 12vmax;
-    margin: 0.5vh;
-    font-weight:400 ;
+    width: 15vmax;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: inherit;
+    margin: 1vh;
+    color: inherit;
+    font-size: 1.5vmax;
+    font-weight:600 ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button.active{
+    background-color: black;
+    color: #fefefe;
+}
+#grid-size{
+    font-family: inherit;
+    font-size: 2vmax;
+}
+
+input,button:hover{
+    transform: scale(1.099);
 }

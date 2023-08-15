@@ -3,6 +3,9 @@
 <head>
     <title>Etch-a-sketch</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -11,22 +14,22 @@
 
     <main class="main">
         <div class="settings">
-            <div id="input-color"></div>
+            <input id="input-color" type="color" value="#333333" />
             <button id="color-mode">Color mode</button>
             <button id="rainbow-mode">Rainbow mode</button>
             <button id="eraser">Eraser</button>
             <button id="clear">Clear</button>
-            <div id="grid-size"></div>
+            <div id="grid-size">
+            
+            </div>
+            <input id="size-slider" type="range" min="16" max="64" step="1" value="16">
         </div>
 
-        <div class="grid-container">
+        <div id="grid-container" class="grid-container">
 
         </div>
    </main>
 
-    <footer>
-
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
