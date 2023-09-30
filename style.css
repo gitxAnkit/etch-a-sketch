@@ -34,8 +34,8 @@ body{
     color: inherit;
 }
 .grid-container{
-    width: 40vmax;
-    height: 40vmax;
+    width: 600px;
+    height: 600px;
     /* border: 0.5px solid black; */
     display: grid;
     background-color: #fefefe;
@@ -63,5 +63,5 @@ button.active{
 }
 
 input,button:hover{
-    transform: scale(1.099);
+    transform: scale(1.05);
 }
